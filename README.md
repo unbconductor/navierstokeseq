@@ -2,7 +2,7 @@
 
 Phyllo-NS is a specialized Computational Fluid Dynamics (CFD) solver that bridges quantum-inspired neural architecture with classical fluid mechanics. By utilizing the "Phyllo" N-Gate potential as a momentum forcing term, this engine simulates the complex, non-linear interaction of fluid topologies such as synthetic vortex dipoles, fractal cascades, and real-world chaotic data assimilation.
 
-## 🔬 Core Architecture
+## Core Architecture
 
 Standard explicit fluid solvers often suffer from numerical instability when introduced to high-gradient topological forcing. Phyllo-NS overcomes this by employing an **Implicit (Backward Euler) integration scheme** coupled with a rigorous **Pressure Projection** method. 
 
@@ -15,7 +15,7 @@ To ensure mass conservation ($\nabla \cdot \mathbf{u} = 0$), we enforce incompre
 
 $$\nabla^2 p = \frac{\rho}{\Delta t} (\nabla \cdot \mathbf{u}^*)$$
 
-## 🚀 The Three Modules
+## The Three Modules
 
 This repository contains three independent scripts demonstrating the capabilities of the Phyllo-NS engine. You can run any of them directly from your terminal.
 
@@ -31,6 +31,6 @@ This module acts as a digital twin. It generates 50 randomized, chaotic telemetr
 This script forces the fluid into a Sierpinski Gasket topological lattice. The fluid resolves the energy into a stationary vortex cascade that mirrors the fractal geometry.
 * **To run:** `python3 phyllo_fractal.py`
 
-## 📦 Dependencies
+## Dependencies
 Ensure you have the required scientific libraries installed before running the solvers:
 `pip install numpy matplotlib scipy`
